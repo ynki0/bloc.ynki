@@ -14,7 +14,7 @@
       <link>https://ynki.website/posts/hi-im-ynki/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://ynki.website/posts/hi-im-ynki/</guid>
-      <description></description>
+      <description>&lt;pre&gt;&lt;code&gt;What I can?  &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Software &amp;amp; systems: core platforms, high-performance services.&lt;br&gt;&#xA;Driver development: Windows/Linux kernel and device drivers, tooling.&lt;br&gt;&#xA;Web engineering: lean backends, stable APIs, admin tooling, integrations.&lt;br&gt;&#xA;Mobile: native iOS/Android or cross-platform only when it fits.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;How work?  &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Direct interaction: single-message communication.&lt;br&gt;&#xA;Short iterations: clear phases, demos, and measurable outcomes.&lt;br&gt;&#xA;Simple architecture: testable designs, reproducible builds, and no redundancy.&lt;br&gt;&#xA;Quality by default: built-in testing, code reviews, and observability.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;Capabilities &amp;amp; stack &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Languages: C, C++, C#, React, Python, TypeScript/Node.js, Go, Java, Kotlin, Bash&lt;br&gt;&#xA;Drivers: Windows WDK, KMDF/UMDF&lt;br&gt;&#xA;Web &amp;amp; services: .NET, Node (Express/Fastify), gRPC/REST, WebSockets, PHP&lt;br&gt;&#xA;Data &amp;amp; queues: PostgreSQL, Redis, SQLite&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;To start a conversation, open an issue or reach out via the org profile.&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>
