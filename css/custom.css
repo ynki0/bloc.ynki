@@ -56,3 +56,26 @@
 }
 
 @keyframes blink { 50% { opacity: 0; } }
+
+
+
+.container.wrapper {
+  max-width: 720px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+
+.header h1.site-title {
+  margin-top: 60px;
+}
+
+body {
+  background: radial-gradient(circle at 15% 50%, rgba(120, 0, 0, 0.15), transparent 60%),
+              radial-gradient(circle at 85% 50%, rgba(0, 80, 200, 0.15), transparent 60%),
+              radial-gradient(circle at 50% 50%, #000, #000 80%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-position 0.3s ease-out;
+  overflow-x: hidden;
+}

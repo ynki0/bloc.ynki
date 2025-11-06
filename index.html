@@ -3,7 +3,7 @@
 <head>
 	<meta name="generator" content="Hugo 0.128.0">
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Ynki blog - Software project manager with interests in reverse engineering, AI, computer vision and neural networks. </title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Ynki blog - In the darkness of bugs, I forge clarity. </title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="alternate" type="application/rss+xml" href="https://ynki.website/index.xml" title="Ynki blog" />
 	<meta property="og:url" content="https://ynki.website/">
   <meta property="og:site_name" content="Ynki blog">
@@ -30,11 +30,48 @@
 
 <body>
 
-  <div class="container wrapper">
-    <div class="header">
+<style>
+
+.header, .header + .container.wrapper, .header + main, body > .container.wrapper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.container.wrapper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+
+body {
+  opacity: 0;
+  background-color: #000;
+  animation: fadeInDark 2s ease-in-out forwards;
+}
+
+@keyframes fadeInDark {
+  0% {
+    opacity: 0;
+    filter: brightness(0.2) blur(5px);
+  }
+  60% {
+    opacity: 0.8;
+    filter: brightness(0.6) blur(2px);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1) blur(0);
+  }
+}
+
+</style>
+
+
+
+<div class="container wrapper" style="margin-top:0;padding-top:0;">
+  <div class="header">
 	<base href="https://ynki.website/">
 	<h1 class="site-title"><a href="https://ynki.website/">Ynki blog</a></h1>
-	<div class="site-description"><h2>Software project manager with interests in reverse engineering, AI, computer vision and neural networks.</h2><nav class="nav social">
+	<div class="site-description"><h2>In the darkness of bugs, I forge clarity.</h2><nav class="nav social">
 			<ul class="flat"></ul>
 		</nav>
 	</div>
@@ -51,31 +88,39 @@
 </div>
 
 
-    
+  
 
-    <div class="recent-posts section">
-		 <div class="typed-container">
-    <span class="typed-text" data-text="
-My Goal  
-The main purpose of my presence is to remain anonymous.  
-The main is to create something new.  
-Can you unravel Enigma?">
-    </span>
+  <div class="recent-posts section" style="margin-top:0;padding-top:0;">
+    <div class="typed-container"></div>
   </div>
-</div>
-      <h2 class="section-header">
-        Recent posts
-      </h2>
+
+  <h2 class="section-header">Recent posts</h2>
+
+  <div class="posts-layout">
+
+
+    <div class="side left">
+      <div class="dragon pure breathe">
+        <img src="/images/dragon.png" alt="Dragon" class="creature dragon-img">
+        <p class="dragon-text glow-red">Against this dark that never tires</p>
+      </div>
+    </div>
+
+
+    <div class="posts-column">
       <div class="posts">
         
         
         
-       <div class="post">
-  <div class="meta">Jan 1, 2025</div>
-  <span class="title">Hi 👋, I&#39;m Ynki!</span> &mdash;
-  <span class="description"><p>Interesting ?</p>
-<p>Start back machine learning.<br>
-Start via project games on <strong>KD Box / AI Aimbot</strong>.</p>
+        <div class="post">
+          <div class="meta">Jan 1, 2025</div>
+          <span class="title">Hi 👋, I&#39;m Ynki!</span> &mdash;
+          <span class="description"><p>About me ?</p>
+<p>Software project manager with interests in reverse engineering, AI, computer vision and neural networks.</p>
+<hr>
+<p>Interesting ?</p>
+<p>Start learning machine.<br>
+Start via project games on <strong>KD Box / AI Aimbot</strong>. (think it will be a 2026 opened project)</p>
 <hr>
 <p>What I can ?</p>
 <p><strong>Software &amp; systems:</strong> core platforms, high-performance services.<br>
@@ -157,22 +202,64 @@ Start via project games on <strong>KD Box / AI Aimbot</strong>.</p>
 <li><strong>Prometheus</strong> — 2018</li>
 </ul>
 <hr>
-<p>To start a conversation open a question or contact us via the org profile.</p></span>
+<p style="text-align: center; color: #bbb; font-family: 'Segoe UI', sans-serif; font-size: 0.95em;">
+  To start a conversation open a question or contact us via the 
+  <a href="https://orion-development.com" target="_blank" class="cold-link">org profile</a>.<br>
+  To forge something great, start with a 
+  <a href="https://t.me/ynki01" target="_blank" class="spark">spark</a>.
+</p>
+<style>
+  .cold-link {
+    color: #4aa3ff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  .cold-link:hover {
+    color: #7fd1ff;
+    text-shadow: 0 0 8px rgba(125, 210, 255, 0.8);
+  }
 
+  .spark {
+    color: #d23b3b;
+    text-decoration: none;
+    animation: ember 3.5s ease-in-out infinite;
+    transition: all 0.3s ease;
+  }
+  .spark:hover {
+    color: #ff4b4b;
+    text-shadow: 0 0 8px #ff4b4b;
+  }
 
-    </span>
-  </div>
-</div>
-
+  @keyframes ember {
+    0%, 100% {
+      text-shadow: 0 0 4px rgba(255, 80, 80, 0.2), 0 0 10px rgba(255, 0, 0, 0.2);
+    }
+    50% {
+      text-shadow: 0 0 8px rgba(255, 90, 90, 0.5), 0 0 20px rgba(255, 0, 0, 0.3);
+    }
+  }
+</style></span>
+        </div>
         
         
 
 
       </div>
     </div>
+
+
+    <div class="side right">
+      <div class="knight pure breathe">
+        <img src="/images/knight.png" alt="Knight" class="creature knight-img">
+        <p class="knight-text glow-gold">I Believe in the Blade</p>
+      </div>
+    </div>
+
   </div>
-  <footer style="margin-top: 3rem; padding: 2rem 0; text-align: center; font-size: 0.9rem; color: #888; border-top: 1px solid #222;">
-  <p style="margin: 0.2rem 0;">© 2025 Сopyright  ynki</p>
+</div>
+
+<footer style="margin-top: 3rem; padding: 2rem 0; text-align: center; font-size: 0.9rem; color: #888; border-top: 1px solid #222;">
+  <p style="margin: 0.2rem 0;">Everything written here was tested by time and fire. © 2025 Сopyright  ynki</p>
   <p style="margin: 0.2rem 0;">
     <a href="https://github.com/ynki0" style="color: #f92672; text-decoration: none;">GitHub</a> ·
     <a href="https://t.me/ynki01" style="color: #f92672; text-decoration: none;">Telegram</a> ·
@@ -268,6 +355,148 @@ Start via project games on <strong>KD Box / AI Aimbot</strong>.</p>
 
 
 </footer>
+
+
+<style>
+
+.posts-layout {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.posts-column {
+  flex: 1;
+  min-width: 0;
+  max-width: 650px;
+  z-index: 3;
+  position: relative;
+}
+
+
+.side {
+  position: absolute;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.side.left {
+  left: -490px;
+  top: 345px;
+}
+
+.side.right {
+  right: -490px;
+  top: 260px;
+}
+
+
+.creature {
+  width: 380px;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease, filter 0.8s ease;
+}
+
+
+.breathe {
+  animation: breathe 7s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.03) translateY(-4px);
+    filter: brightness(1.1);
+  }
+}
+
+
+.dragon-img {
+  filter: brightness(0.9) contrast(1.1);
+  margin-bottom: 1rem;
+}
+
+.dragon-img:hover {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 40px rgba(180, 0, 0, 0.6)) brightness(1.2);
+}
+
+.dragon-text.glow-red {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4b0000;
+  margin-top: 0;
+  text-shadow: 0 0 8px rgba(120, 0, 0, 0.4);
+  animation: textGlowRed 3.5s ease-in-out infinite;
+}
+
+@keyframes textGlowRed {
+  0%, 100% { opacity: 1; text-shadow: 0 0 12px rgba(180, 0, 0, 0.6); }
+  50% { opacity: 0.6; text-shadow: 0 0 6px rgba(100, 0, 0, 0.2); }
+}
+
+
+.knight-img {
+  width: 380px;
+  filter: brightness(1) contrast(1.1);
+  margin-bottom: 0.4rem;
+}
+
+.knight-img:hover {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 40px rgba(255,255,255,0.9)) brightness(1.25);
+}
+
+.knight-text.glow-gold {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #b0c4de;
+  margin-top: -6.5rem; 
+  text-shadow: 0 0 8px rgba(80, 150, 255, 0.3);
+  animation: textGlowGold 3s ease-in-out infinite;
+  text-align: center;
+}
+
+
+@keyframes textGlowBlue {
+  0%, 100% { opacity: 1; text-shadow: 0 0 12px rgba(90, 160, 255, 0.6); }
+  50% { opacity: 0.7; text-shadow: 0 0 6px rgba(60, 120, 255, 0.3); }
+}
+
+@media (max-width: 1200px) {
+  .side.left, .side.right { display: none; }
+}
+
+body {
+  background: radial-gradient(circle at 50% 80px, rgba(255,255,255,0.05), transparent 70%) #000;
+}
+
+.knight-img {
+  animation: knightBreathe 7s ease-in-out infinite;
+}
+@keyframes knightBreathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+
+
+</style>
+
+
 
 </body>
 </html>
