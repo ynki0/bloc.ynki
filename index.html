@@ -769,16 +769,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     });
 
-    console.log("✅ Config loaded");
+    console.log("load");
   } catch (err) {
-    console.error("⚠️ config.env:", err);
+    console.error("not load", err);
   }
 
- 
+  
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    
+  
     if (!TOKEN || !CHAT_ID) {
       alert("Ошибка: Telegram config не загружен");
       return;
@@ -797,7 +797,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 <b>Message:</b> ${formData.get("message")}
 `;
 
- 
     sendBtn.disabled = true;
     sendBtn.textContent = "Sending...";
 
@@ -812,17 +811,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         }),
       });
 
-      
       window.location.reload();
 
     } catch (err) {
-      console.error("Error:", err);
+      console.error("error", err);
       sendBtn.disabled = false;
       sendBtn.textContent = "SEND";
     }
   });
 });
 </script>
+
 
 
 
