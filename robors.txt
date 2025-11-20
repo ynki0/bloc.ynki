@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /drafts/
+Disallow: /private/
+Disallow: /404.html
+
+
+Sitemap: {{ "sitemap.xml" | absURL }}
