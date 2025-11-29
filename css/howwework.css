@@ -1,0 +1,72 @@
+
+.how-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.how-header h3 {
+  font-size: 1rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bar {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #ff00cc); /* радужная полоска */
+  border-radius: 2px;
+}
+
+.indicator span {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.how-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .how-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.how-item {
+  flex: 1;
+  min-width: 0;
+}
+
+.how-item h4 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.how-item p {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.how-footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+
