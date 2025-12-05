@@ -61,146 +61,260 @@
       .posts-column { max-width: 100%; padding: 0 0.8rem; }
       .posts { max-width: 100%; }
     }
+
      
-    .send-btn {
-      margin: 25px auto 10px;
-      display: block;
-      background: linear-gradient(90deg, rgba(83,1,72,1), rgba(61,1,60,1));
-      color: #fff;
-      border: none;
-      width: 140px;
-      padding: 10px 0;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: all 0.28s ease;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      box-shadow: 0 6px 18px rgba(83,1,72,0.18);
-    }
-    .send-btn:hover { transform: translateY(-2px); background: linear-gradient(90deg, rgba(83,1,72,1), rgba(61,1,60,1)); }
-   
-  .project-form input:focus,
-  .project-form textarea:focus { border-color: rgba(83,1,72,0.9) !important; }
-  .project-types label { border-color: rgba(83,1,72,0.06) !important; }
-  .project-types label:hover { border-color: rgba(83,1,72,0.12) !important; color: #fff !important }
-  .project-types input:checked + label { border-color: rgba(83,1,72,0.9) !important; box-shadow:0 8px 24px rgba(83,1,72,0.08) !important; }
-  .project-types input:checked + label::before { color: rgba(83,1,72,0.95) !important; }
-
-   
-  #contact {
-    max-width: 1200px;
-    margin: 4rem auto;
-    padding: 3rem 1.25rem;
-    background: linear-gradient(180deg, rgba(0,0,0,0.94), rgba(0,0,0,0.94));
-    border: 1px solid rgba(83,1,72,0.12);
-    border-radius: 16px;
-    box-shadow: 0 18px 60px rgba(83,1,72,0.18), 0 0 40px rgba(100,20,95,0.04) inset;
-  }
-
-  #contact h2 {
-    font-size: 1.8rem;
-    color: #fff;
-    margin: 0 0 2rem 0;
-    text-align: center;
-  }
-
-  .project-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-
-  .project-form label {
-    display: block;
-    color: #bfcfe0;
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 0.4rem;
-  }
-
-  .project-form input[type="text"],
-  .project-form input[type="email"],
-  .project-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(83, 1, 72, 0.3);
-    border-radius: 8px;
-    color: #fff;
-    font-family: inherit;
-    font-size: 0.95rem;
-    transition: all 0.2s ease;
-    box-sizing: border-box;
-  }
-
-  .project-form input:focus,
-  .project-form textarea:focus {
-    outline: none;
-    border-color: rgba(83, 1, 72, 0.8);
-    box-shadow: 0 0 12px rgba(83, 1, 72, 0.15);
-  }
-
-  .project-form textarea {
-    resize: vertical;
-    min-height: 120px;
-  }
-
-  .project-types {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin: 0.5rem 0;
-  }
-
-  .project-types input[type="checkbox"] {
-    display: none;
-  }
-
-  .project-types label {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.75rem;
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(83, 1, 72, 0.15);
-    border-radius: 8px;
-    color: #9aa0a6;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    user-select: none;
-  }
-
-  .project-types label:hover {
-    border-color: rgba(83, 1, 72, 0.4);
-    background: rgba(83, 1, 72, 0.05);
-  }
-
-  .project-types input:checked + label {
-    background: rgba(233, 0, 245, 0.1);
-    border-color: rgba(233, 0, 245, 0.6);
-    color: #e900f5;
-  }
-
-  .project-types .icon {
-    font-size: 1.1rem;
-  }
-
-  @media (max-width: 700px) {
     #contact {
-      padding: 2rem 1rem;
-      margin: 2rem 0;
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 2rem;
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0));
+      border: 1px solid rgb(0, 0, 0);
+      box-shadow: 0 24px 80px rgb(0, 0, 0), inset 0 0 40px rgb(0, 0, 0);
     }
-    #contact h2 {
-      font-size: 1.4rem;
+
+    #contact .contact-grid {
+      display: grid;
+       
+      grid-template-columns: 1fr 480px;
+      gap: 2rem;
+      align-items: start;
     }
-    .project-types {
-      grid-template-columns: 1fr;
+
+     
+    .contact-left {
+      padding: 2rem;
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0));
+      border: 1px solid rgba(83,1,72,0.06);
+      box-shadow: 0 20px 60px rgba(100, 1, 87, 0.64);
+      min-height: 420px;
     }
-  }
+
+    .contact-left .kicker {
+      color: rgba(66, 1, 72, 0.631);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.45rem;
+      opacity: 0.95;
+    }
+
+    .contact-left h2 {
+      color: #fff;
+      font-size: 2rem;
+      margin: 0 0 0.6rem 0;
+    }
+
+    .contact-left p.lead {
+      color: #bfcfe0;
+      margin: 0 0 1rem 0;
+    }
+
+    .chips { display:flex; gap:0.6rem; flex-wrap:wrap; margin: 0.6rem 0 1.2rem 0 }
+    .chip { background: rgb(0, 0, 0); color:#e6dafa; padding: 6px 10px; border-radius: 999px; font-size: 0.85rem; border:1px solid rgb(0, 0, 0) }
+
+    .chat-prefer { display:flex; gap:0.6rem; margin: 1rem 0 }
+    .chat-btn { background: rgba(0,0,0,0.4); border:1px solid rgba(255,255,255,0.03); color:#dcd6e8; padding:8px 10px; border-radius:9px; display:flex; gap:0.6rem; align-items:center; font-weight:600 }
+
+    .preview-box { margin-top: 1rem; background: transparent; border:1px solid rgba(83,1,72,0.12); padding: 1rem; border-radius: 12px; color:#c7d6e8; min-height:200px }
+  .preview-box { position:relative }
+  .preview-badge { position:absolute; top:12px; right:12px; background: linear-gradient(90deg, rgba(83,1,72,0.9), rgba(100,1,87,0.9)); color:#fff; padding:6px 10px; border-radius:999px; font-weight:700; font-size:0.85rem; box-shadow:0 6px 18px rgba(100,1,87,0.12) }
+
+     
+    .contact-right { padding: 18px; border-radius: 14px; background: linear-gradient(180deg, rgba(10,6,16,0.6), rgba(8,4,12,0.6)); border:1px solid rgba(83,1,72,0.06); box-shadow: 0 12px 40px rgba(0,0,0,0.6); }
+
+    .project-form { display:flex; flex-direction:column; gap:0.8rem; }
+
+    .row { display:flex; gap:0.8rem; }
+    .row .field { flex:1 }
+
+    .project-form label { display:block; color:#bfcfe0; font-size:0.85rem; font-weight:700; margin-bottom:6px }
+
+    .project-form input[type="text"], .project-form input[type="email"], .project-form textarea, .project-form select {
+      width:100%; padding:10px 12px; border-radius:10px; background: rgba(0,0,0,0.45); border:1px solid rgba(83,1,72,0.18); color:#fff; box-sizing:border-box; font-size:0.95rem
+    }
+
+     
+    .project-form input[name="contact"] {
+      width:100%;
+      padding:10px 12px;
+      height:40px;
+      border-radius:10px;
+      background: rgba(0,0,0,0.45);
+      border:1px solid rgba(83,1,72,0.18);
+      color:#fff;
+      text-align:left;
+      box-sizing:border-box;
+      font-size:0.95rem;
+    }
+
+    .project-form input::placeholder { color: rgba(191,207,224,0.45); }
+
+     
+    .project-form input.standard-input {
+      width:100% !important;
+      padding:10px 12px !important;
+      height:40px !important;
+      border-radius:10px !important;
+      background: rgba(0,0,0,0.45) !important;
+      border:1px solid rgba(83,1,72,0.18) !important;
+      color:#fff !important;
+      text-align:left !important;
+      box-sizing:border-box !important;
+      display:block !important;
+      margin:0 !important;
+      font-size:0.95rem !important;
+    }
+
+    .project-form input.standard-input::placeholder { color: rgba(191,207,224,0.45) !important; text-align:left !important }
+
+    .project-form input:focus, .project-form textarea:focus, .project-form select:focus { outline:none; box-shadow:0 6px 30px rgba(83,1,72,0.08); border-color: rgba(83,1,72,0.9) }
+
+    .types-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:0.7rem; margin:0.6rem 0 }
+    .type-tile { background: rgba(0,0,0,0.35); border:1px solid rgba(83,1,72,0.08); border-radius:12px; padding:12px; color:#cfcfe0; display:flex; flex-direction:column; align-items:center; gap:8px; cursor:pointer; text-align:center; transition: all 0.16s ease }
+    .type-tile .label { font-weight:700; font-size:0.95rem }
+    .type-tile i { font-size:1.2rem; color:#cdbef0 }
+
+     
+    input[type="checkbox"][id^="t-"]:checked + label.type-tile {
+      background: linear-gradient(90deg, rgba(83,1,72,0.06), rgba(61,1,60,0.03));
+      border-color: rgba(83,1,72,0.7);
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(83,1,72,0.06);
+      transform: translateY(-2px);
+    }
+
+     
+    .type-tile.selected {
+      background: linear-gradient(180deg, rgba(83,1,72,0.12), rgba(61,1,60,0.06));
+      border-color: rgba(100,1,87,0.9);
+      color: #fff;
+      box-shadow: 0 12px 36px rgba(100,1,87,0.08);
+      transform: translateY(-2px);
+      position:relative;
+    }
+
+    .type-tile.selected::after {
+      content: '\f00c';  
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position:absolute;
+      top:8px;
+      right:10px;
+      background: rgba(100,1,87,0.95);
+      color:#fff;
+      width:22px;
+      height:22px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:999px;
+      box-shadow:0 6px 18px rgba(100,1,87,0.12);
+      font-size:0.85rem;
+    }
+
+    .chips-grid { display:flex; gap:0.5rem; flex-wrap:wrap; margin:0.5rem 0 }
+    .chip-select { padding:6px 10px; border-radius:999px; background: rgba(0,0,0,0.35); border:1px solid rgba(83,1,72,0.06); color:#c7d6e8; cursor:pointer }
+    .chip-select.active { background: linear-gradient(90deg, rgba(83,1,72,0.15), rgba(61,1,60,0.12)); border-color: rgba(83,1,72,0.6); color:#fff }
+
+  .request-row { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-top:0.6rem }
+   
+  .request-row .send-btn { margin:0; width:auto; padding:10px 18px; border-radius:12px; background: linear-gradient(90deg, rgba(100,1,87,0.64), rgba(100,1,87,0.64)); box-shadow: 0 10px 30px rgba(100,1,87,0.22); color:#fff; border:1px solid rgba(100,1,87,0.9); }
+  .request-row .send-btn:hover { transform:translateY(-2px); box-shadow: 0 14px 40px rgba(100,1,87,0.28); }
+
+     
+    @media (max-width: 980px) {
+      .contact-grid { grid-template-columns: 1fr; gap:1.4rem }
+       
+      .contact-left { order:1 }
+      .contact-right { order:2 }
+      .types-grid { grid-template-columns: repeat(2,1fr) }
+      .contact-left, .contact-right { padding:1.5rem }
+      .project-form input[type="text"], .project-form input[type="email"], .project-form textarea, .project-form select, .project-form input[name="contact"] { height:48px }
+    }
+
+     
+    @media (max-width: 700px) {
+       
+      #contact { padding:0.9rem; margin:1.6rem auto; max-width:540px; box-sizing:border-box; width:calc(100% - 32px); left:50%; transform:translateX(-50%); position:relative }
+   
+  .contact-grid { display:flex; flex-direction:column; align-items:center; gap:0.9rem; width:100% }
+     
+      .contact-left { display:none !important; order:1; width:100%; max-width:540px; margin:0 auto }
+      .contact-right { order:1; width:100%; max-width:540px; margin:0 auto }
+    .contact-left, .contact-right { padding:0.9rem; box-sizing:border-box }
+
+     
+      .contact-left h2 { display:none !important }
+      .contact-left .kicker { display:none !important }
+
+   
+  .types-grid { grid-template-columns: repeat(3, 1fr); gap:0.6rem }
+  .type-tile { padding:14px; border-radius:12px; min-height:72px; display:flex; align-items:center; justify-content:center; flex-direction:column }
+  .type-tile .label { font-size:0.95rem; line-height:1.1 }
+
+   
+  .chips-grid { display:flex; flex-wrap:wrap; gap:0.45rem; justify-content:flex-start }
+  .chips-grid .chip-select { white-space:normal; flex:0 1 auto; padding:6px 10px; font-size:0.86rem }
+
+   
+  .project-form input[type="text"], .project-form input[type="email"], .project-form textarea, .project-form select, .project-form input[name="contact"] { height:48px; font-size:0.98rem }
+  .project-form textarea { min-height:110px }
+      .request-row { flex-direction:column; gap:0.5rem }
+      .request-row .send-btn { width:100% }
+
+   
+  .preview-box { min-height:80px }
+
+   
+  .preview-box { display:none !important }
+  .preview-badge { display:none !important }
+     
+    .types-grid { display:none !important }
+    .types-label { display:none !important }
+      .preview-badge { top:8px; right:8px; font-size:0.78rem; padding:6px 8px }
+
+   
+  .contact-right { margin: 0 auto; max-width: 520px; box-sizing: border-box; width:100%; background: linear-gradient(180deg, rgba(10,6,16,0.6), rgba(8,4,12,0.6)); border-radius:14px; padding:18px }
+   
+  .contact-right { float:none; clear:both }
+  .contact-right .project-form { align-items: stretch; width:100% }
+       
+      .contact-right .row { flex-direction: column }
+      .contact-right .row .field { width:100% }
+
+     
+  .types-grid { width:100%; margin:0 auto }
+  .type-tile { width:100%; max-width:none }
+  .chips-grid { width:100%; justify-content:flex-start }
+
+   
+  .request-row .send-btn { width:100%; padding:12px 18px; border-radius:10px; font-weight:700 }
+
+     
+    .contact-right { width:480px; max-width:480px }
+    .contact-right .row { flex-direction: row; gap:0.8rem }
+    .contact-right .row .field { width:auto; flex:1 }
+    .contact-right .types-grid { grid-template-columns: repeat(3, 1fr) }
+    .contact-right .chips-grid { display:flex; flex-wrap:wrap; gap:0.5rem }
+    .contact-right .project-form input[type="text"], .contact-right .project-form input[type="email"], .contact-right .project-form textarea, .contact-right .project-form select, .contact-right .project-form input[name="contact"] { height:40px; font-size:0.95rem }
+    .contact-right .request-row { flex-direction:row; justify-content:space-between }
+    .contact-right .request-row .send-btn { width:auto }
+    }
+
+     
+    @media (max-width: 480px) {
+      .contact-left h2 { font-size:1.35rem }
+      .contact-left .kicker { font-size:0.70rem }
+      .project-form label { font-size:0.8rem }
+      .type-tile .label { font-size:0.92rem }
+      .type-tile i { font-size:1rem }
+      .types-grid { grid-template-columns: 1fr; gap:0.5rem }
+      .chip-select { padding:7px 10px; font-size:0.86rem }
+      .preview-badge { font-size:0.72rem }
+    }
   </style>
 
 
@@ -209,40 +323,93 @@
 
   <section class="landing-widget">
   <div class="widget-inner">
+    
+    <div class="lang-switcher" aria-hidden="false">
+      <button type="button" class="lang-btn" aria-haspopup="true" aria-expanded="false" title="Language">
+        <span class="flag" aria-hidden="true">
+          
+          <svg viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+            <rect width="60" height="36" fill="#b22234"/>
+            <g fill="#fff">
+              <rect y="4" width="60" height="4"/>
+              <rect y="12" width="60" height="4"/>
+              <rect y="20" width="60" height="4"/>
+              <rect y="28" width="60" height="4"/>
+            </g>
+            <rect width="26" height="14" fill="#3c3b6e"/>
+            <g fill="#fff">
+              <circle cx="4" cy="5" r="0.9"/>
+              <circle cx="8" cy="5" r="0.9"/>
+              <circle cx="12" cy="5" r="0.9"/>
+              <circle cx="16" cy="5" r="0.9"/>
+              <circle cx="20" cy="5" r="0.9"/>
+            </g>
+          </svg>
+        </span>
+      </button>
+      <div class="lang-dropdown" role="menu" aria-hidden="true">
+        <button class="lang-item" data-lang="en" role="menuitem"> <span class="flag" aria-hidden="true">
+            <svg viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+              <rect width="60" height="36" fill="#b22234"/>
+              <g fill="#fff">
+                <rect y="4" width="60" height="4"/>
+                <rect y="12" width="60" height="4"/>
+                <rect y="20" width="60" height="4"/>
+                <rect y="28" width="60" height="4"/>
+              </g>
+              <rect width="26" height="14" fill="#3c3b6e"/>
+              <g fill="#fff">
+                <circle cx="4" cy="5" r="0.9"/>
+                <circle cx="8" cy="5" r="0.9"/>
+                <circle cx="12" cy="5" r="0.9"/>
+                <circle cx="16" cy="5" r="0.9"/>
+                <circle cx="20" cy="5" r="0.9"/>
+              </g>
+            </svg>
+          </span><span class="sr-only">English</span><span class="check">✓</span></button>
+        <button class="lang-item" data-lang="ru" role="menuitem"> <span class="flag" aria-hidden="true">
+            <svg viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+              <rect width="60" height="12" fill="#ffffff"/>
+              <rect y="12" width="60" height="12" fill="#0039a6"/>
+              <rect y="24" width="60" height="12" fill="#d52b1e"/>
+            </svg>
+          </span><span class="sr-only">Русский</span><span class="check">✓</span></button>
+      </div>
+    </div>
     <div class="widget-left">
-      <h2 class="widget-title">Build the software that quietly runs your business.</h2>
-      <p class="widget-sub">An experienced developer who will carry your project through to completion: a transparent hourly rate, clear stages and goals, a solid reputation on major forums, and guaranteed, reliable cooperation — launching projects since 2018.</p>
+  <h2 class="widget-title" data-i18n="landing.title">Build the software that quietly runs your business.</h2>
+  <p class="widget-sub" data-i18n="landing.sub">Expert-level development that will guide your project from concept to completion. Transparent hourly rates, clearly defined stages and goals, a strong reputation on major forums, and reliable cooperation. Leading product launches since 2018 across multiple industries.</p>
 
       <div class="widget-cta">
-        <a class="btn primary" href="#contact">Plan a project →</a>
+  <a class="btn primary" href="#contact" data-i18n="landing.cta">Plan a project →</a>
       </div>
 
       <div class="tag-row">
-        <span>Internal tools, backends, automation</span>
-        <span>Transparent hourly rates</span>
+        <span data-i18n="landing.tag1">Internal tools, backends, automation</span>
+        <span data-i18n="landing.tag2">Transparent hourly rates</span>
       </div>
     </div>
 
     <div class="widget-right">
       <div class="card">
         <div class="card-top">
-          <div class="meta">internal.ynki.dev / admin</div>
+          <div class="meta" data-i18n="landing.meta">internal.ynki.dev / admin</div>
           <div class="stats">
-            <div><strong>7</strong><span>Active projects</span></div>
-            <div><strong>254</strong><span>This month hours</span></div>
-            <div><strong>&lt;3h</strong><span>Avg. response</span></div>
+            <div><strong>7</strong><span data-i18n="landing.stats.active">Active projects</span></div>
+            <div><strong>254</strong><span data-i18n="landing.stats.month">This month hours</span></div>
+            <div><strong>&lt;3h</strong><span data-i18n="landing.stats.avg">Avg. response</span></div>
           </div>
         </div>
 
         <div class="card-body">
           <ul>
-            <li><span class="dot green"></span> Logistics ops console <span class="pill">Deploy v1.3</span></li>
-            <li><span class="dot yellow"></span> Retail automation layer <span class="pill">Add new feeds</span></li>
-            <li><span class="dot blue"></span> SaaS admin portal <span class="pill">Billing view</span></li>
+            <li><span class="dot green"></span> <span data-i18n="landing.list1">Logistics ops console</span> <span class="pill" data-i18n="landing.list1.pill">Deploy v1.3</span></li>
+            <li><span class="dot yellow"></span> <span data-i18n="landing.list2">Retail automation layer</span> <span class="pill" data-i18n="landing.list2.pill">Add new feeds</span></li>
+            <li><span class="dot blue"></span> <span data-i18n="landing.list3">SaaS admin portal</span> <span class="pill" data-i18n="landing.list3.pill">Billing view</span></li>
           </ul>
         </div>
 
-        <div class="card-footer">Clients can track work.</div>
+  <div class="card-footer" data-i18n="landing.footer">Clients can track work.</div>
       </div>
     </div>
   </div>
@@ -344,47 +511,202 @@
     .btn{padding:0.7rem 1rem;font-size:0.85rem}
   }
    
+  .lang-switcher{position:absolute;right:18px;top:18px;z-index:30}
+  .lang-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:10px;border:0;background:linear-gradient(180deg,#201024,#2b002f);box-shadow:0 6px 18px rgba(2,1,6,0.6);cursor:pointer;color:#fff}
+  .lang-btn .flag{display:inline-block;width:26px;height:18px}
+  .lang-dropdown{position:absolute;right:0;top:48px;background:linear-gradient(180deg,#0b0610,#120516);border-radius:10px;padding:0.4rem;min-width:160px;box-shadow:0 10px 40px rgba(15,6,20,0.6);border:1px solid rgba(255,255,255,0.03);display:none}
+  .lang-dropdown .lang-item{display:inline-flex;align-items:center;justify-content:center;gap:0.4rem;padding:0.25rem;border-radius:8px;background:transparent;border:0;color:#e6f3ff;font-size:0.95rem;cursor:pointer;width:44px;height:40px;margin:0.15rem}
+  .lang-dropdown .lang-item .flag{display:inline-block;width:26px;height:18px}
+  .lang-dropdown .lang-item .flag svg{width:100%;height:100%;display:block}
+  .lang-btn .flag svg{width:100%;height:100%;display:block}
+  .lang-dropdown .lang-item:hover{background:rgba(255,255,255,0.02)}
+  .lang-dropdown .lang-item .check{display:none}
+   
+  .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+   
+  .lang-dropdown .lang-item.selected{box-shadow:0 0 0 3px rgba(143,240,198,0.08);background:rgba(255,255,255,0.02)}
+  .lang-switcher.open .lang-dropdown{display:block}
+
+   
   </style>
+  <script>
+  (function(){
+    const switcher = document.querySelector('.lang-switcher');
+    if (!switcher) return;
+    const btn = switcher.querySelector('.lang-btn');
+    const dropdown = switcher.querySelector('.lang-dropdown');
+  const items = Array.from(switcher.querySelectorAll('.lang-item'));
+  
+  const enSvgMarkup = (switcher.querySelector('.lang-item[data-lang="en"] .flag') || {}).innerHTML || '';
+  const ruSvgMarkup = (switcher.querySelector('.lang-item[data-lang="ru"] .flag') || {}).innerHTML || '';
+
+    function closeDropdown(){
+      switcher.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      dropdown.setAttribute('aria-hidden','true');
+    }
+
+    function openDropdown(){
+      switcher.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+      dropdown.setAttribute('aria-hidden','false');
+    }
+
+    function setLang(lang){
+      try{ localStorage.setItem('siteLang', lang); }catch(e){}
+      document.documentElement.lang = lang === 'ru' ? 'ru' : 'en';
+      
+      const iconMarkup = (lang === 'ru' ? ruSvgMarkup : enSvgMarkup) || '';
+      const flagEl = btn.querySelector('.flag');
+      if (flagEl) flagEl.innerHTML = iconMarkup;
+      
+      items.forEach(it => it.classList.toggle('selected', it.dataset.lang === lang));
+      
+      closeDropdown();
+      
+      window.dispatchEvent(new CustomEvent('siteLangChange', { detail: { lang } }));
+      
+      setTimeout(()=>{
+        try{ if (window.__applySiteTranslations) window.__applySiteTranslations(lang === 'ru' ? 'ru' : 'en'); }catch(e){}
+      }, 10);
+    }
+
+    
+    const saved = (function(){ try{ return localStorage.getItem('siteLang'); }catch(e){return null;} })();
+    setLang(saved === 'ru' ? 'ru' : 'en');
+
+    btn.addEventListener('click', (e)=>{
+      const isOpen = switcher.classList.contains('open');
+      if (isOpen) closeDropdown(); else openDropdown();
+    });
+
+    items.forEach(it => {
+      it.addEventListener('click', ()=> setLang(it.dataset.lang));
+    });
+
+    
+    document.addEventListener('click', (e)=>{
+      if (!switcher.contains(e.target)) closeDropdown();
+    });
+
+    
+    document.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') closeDropdown(); });
+  })();
+  </script>
+  <script>
+  
+  (function(){
+    const map = {
+      en: {
+        'landing.title': 'Build the software that quietly runs your business.',
+        'landing.sub': 'Expert-level development that will guide your project from concept to completion. Transparent hourly rates, clearly defined stages and goals, a strong reputation on major forums, and reliable cooperation. Leading product launches since 2018 across multiple industries.',
+        'landing.cta': 'Plan a project →',
+        'landing.tag1': 'Internal tools, backends, automation',
+        'landing.tag2': 'Transparent hourly rates',
+        'landing.meta': 'internal.ynki.dev / admin',
+        'landing.stats.active': 'Active projects',
+        'landing.stats.month': 'This month hours',
+        'landing.stats.avg': 'Avg. response',
+        'landing.list1': 'Logistics ops console',
+        'landing.list1.pill': 'Deploy v1.3',
+        'landing.list2': 'Retail automation layer',
+        'landing.list2.pill': 'Add new feeds',
+        'landing.list3': 'SaaS admin portal',
+        'landing.list3.pill': 'Billing view',
+        'landing.footer': 'Clients can track work.'
+      },
+      ru: {
+        'landing.title': 'Создавайте ПО, которое тихо управляет вашим бизнесом.',
+        'landing.sub': 'Экспертная разработка, которая доведёт ваш проект от идеи до завершения. Прозрачная почасовая ставка, чёткие этапы и цели, крепкая репутация на крупных форумах и надёжное сотрудничество. Лидируем в запуске продуктов с 2018 года в различных сферах.',
+        'landing.cta': 'Запланировать проект →',
+        'landing.tag1': 'Внутренние инструменты, бэкенды, автоматизация',
+        'landing.tag2': 'Прозрачная почасовая оплата',
+        'landing.meta': 'internal.ynki.dev / admin',
+        'landing.stats.active': 'Активные проекты',
+        'landing.stats.month': 'Часов в этом месяце',
+        'landing.stats.avg': 'Среднее время ответа',
+        'landing.list1': 'Консоль логистических операций',
+        'landing.list1.pill': 'Развернуть v1.3',
+        'landing.list2': 'Слой автоматизации ритейла',
+        'landing.list2.pill': 'Добавить фиды',
+        'landing.list3': 'SaaS админ‑панель',
+        'landing.list3.pill': 'Просмотр биллинга',
+        'landing.footer': 'Клиенты могут отслеживать работу.'
+      }
+    };
+
+    function apply(lang){
+      if(!lang || !map[lang]) lang = 'en';
+      
+      document.querySelectorAll('[data-i18n^="landing."]').forEach(el=>{
+        const key = el.getAttribute('data-i18n');
+        if(!el.dataset.orig) el.dataset.orig = el.textContent.trim();
+        const txt = (map[lang] && map[lang][key]) ? map[lang][key] : el.dataset.orig;
+        el.textContent = txt;
+      });
+    }
+
+    
+    const saved = (function(){ try{ return localStorage.getItem('siteLang'); }catch(e){return null;} })();
+    apply(saved === 'ru' ? 'ru' : (document.documentElement.lang === 'ru' ? 'ru' : 'en'));
+
+    
+    window.addEventListener('siteLangChange', (e)=>{
+      const lang = e && e.detail && e.detail.lang ? e.detail.lang : (document.documentElement.lang || 'en');
+      apply(lang === 'ru' ? 'ru' : 'en');
+    });
+
+    
+    window.__siteTranslationHandlers = window.__siteTranslationHandlers || [];
+    window.__siteTranslationHandlers.push(apply);
+    
+    if(!window.__applySiteTranslations){
+      window.__applySiteTranslations = function(lang){
+        window.__siteTranslationHandlers.forEach(h=>{ try{ h(lang); }catch(e){} });
+      };
+    }
+  })();
+  </script>
 </section>
 
 
   <section class="project-shape-widget">
   <div class="ps-inner">
     <div class="ps-left">
-      <div class="eyebrow">SHAPE OF A TYPICAL PROJECT</div>
-      <h2 class="ps-title">Take whatever you have, route it through something sane, and send it where it needs to go.</h2>
-      <p class="ps-sub">Most of our work is this: existing tools, messy data and half-automated workflows — a small set of stable services — clean outputs.</p>
+      <div class="eyebrow" data-i18n="project.eyebrow">SHAPE OF A TYPICAL PROJECT</div>
+      <h2 class="ps-title" data-i18n="project.title">Take whatever you have, route it through something sane, and send it where it needs to go.</h2>
+      <p class="ps-sub" data-i18n="project.sub">Most of our work is this: existing tools, messy data and half-automated workflows — a small set of stable services — clean outputs.</p>
     </div>
 
     <div class="ps-right">
       <div class="ps-boxes">
         <div class="ps-box">
-          <h4>INPUTS</h4>
+          <h4 data-i18n="project.inputs">INPUTS</h4>
           <ul>
-            <li>Admin panel</li>
-            <li>APIs</li>
-            <li>Legacy tools</li>
-            <li>Spreadsheets</li>
+            <li data-i18n="project.input1">Admin panel</li>
+            <li data-i18n="project.input2">APIs</li>
+            <li data-i18n="project.input3">Legacy tools</li>
+            <li data-i18n="project.input4">Spreadsheets</li>
           </ul>
         </div>
 
         <div class="ps-box highlight">
-          <h4>LAYER</h4>
+          <h4 data-i18n="project.layer">LAYER</h4>
           <ul>
-            <li>Services</li>
-            <li>Jobs & automation</li>
-            <li>Storage</li>
-            <li class="muted">Observability, retries, logs, permissions</li>
+            <li data-i18n="project.layer1">Services</li>
+            <li data-i18n="project.layer2">Jobs & automation</li>
+            <li data-i18n="project.layer3">Storage</li>
+            <li class="muted" data-i18n="project.layer4">Observability, retries, logs, permissions</li>
           </ul>
         </div>
 
         <div class="ps-box">
-          <h4>OUTPUTS</h4>
+          <h4 data-i18n="project.outputs">OUTPUTS</h4>
           <ul>
-            <li>Dashboards</li>
-            <li>Exports</li>
-            <li>Webhooks</li>
-            <li>Mobile / desktop</li>
+            <li data-i18n="project.output1">Dashboards</li>
+            <li data-i18n="project.output2">Exports</li>
+            <li data-i18n="project.output3">Webhooks</li>
+            <li data-i18n="project.output4">Mobile / desktop</li>
           </ul>
         </div>
       </div>
@@ -455,38 +777,127 @@
   </style>
 </section>
 
+<script>
+
+(function(){
+  const map = {
+    en: {
+      'project.eyebrow': 'SHAPE OF A TYPICAL PROJECT',
+      'project.title': 'Take whatever you have, route it through something sane, and send it where it needs to go.',
+      'project.sub': 'Most of our work is this: existing tools, messy data and half-automated workflows — a small set of stable services — clean outputs.',
+      'project.inputs': 'INPUTS',
+      'project.input1': 'Admin panel',
+      'project.input2': 'APIs',
+      'project.input3': 'Legacy tools',
+      'project.input4': 'Spreadsheets',
+      'project.layer': 'LAYER',
+      'project.layer1': 'Services',
+      'project.layer2': 'Jobs & automation',
+      'project.layer3': 'Storage',
+      'project.layer4': 'Observability, retries, logs, permissions',
+      'project.outputs': 'OUTPUTS',
+      'project.output1': 'Dashboards',
+      'project.output2': 'Exports',
+      'project.output3': 'Webhooks',
+      'project.output4': 'Mobile / desktop'
+    },
+    ru: {
+      'project.eyebrow': 'ФОРМА ТИПИЧНОГО ПРОЕКТА',
+      'project.title': 'Возьмите то, что у вас есть, пропустите через что-то разумное, отправьте туда, где это нужно.',
+      'project.sub': 'Большинство нашей работы — это: существующие инструменты, грязные данные и полуавтоматизированные процессы — небольшой набор стабильных сервисов — чистые выходные данные.',
+      'project.inputs': 'ВХОДЫ',
+      'project.input1': 'Админ-панель',
+      'project.input2': 'API',
+      'project.input3': 'Устаревшие инструменты',
+      'project.input4': 'Таблицы',
+      'project.layer': 'СЛОЙ',
+      'project.layer1': 'Сервисы',
+      'project.layer2': 'Задания и автоматизация',
+      'project.layer3': 'Хранилище',
+      'project.layer4': 'Наблюдаемость, повторы, логи, права доступа',
+      'project.outputs': 'ВЫХОДЫ',
+      'project.output1': 'Дашборды',
+      'project.output2': 'Экспорты',
+      'project.output3': 'Вебхуки',
+      'project.output4': 'Мобильное / десктопное'
+    }
+  };
+
+  function apply(lang){
+    if(!lang || !map[lang]) lang = 'en';
+    
+    document.querySelectorAll('[data-i18n^="project."]').forEach(el=>{
+      const key = el.getAttribute('data-i18n');
+      if(!el.dataset.orig) el.dataset.orig = el.textContent.trim();
+      const txt = (map[lang] && map[lang][key]) ? map[lang][key] : el.dataset.orig;
+      el.textContent = txt;
+    });
+  }
+
+  function initTranslations(){
+    
+    window.__siteTranslationHandlers = window.__siteTranslationHandlers || [];
+    window.__siteTranslationHandlers.push(apply);
+    
+    if(!window.__applySiteTranslations){
+      window.__applySiteTranslations = function(lang){
+        window.__siteTranslationHandlers.forEach(h=>{ try{ h(lang); }catch(e){} });
+      };
+    }
+
+    
+    const saved = (function(){ try{ return localStorage.getItem('siteLang'); }catch(e){return null;} })();
+    const initial = saved || document.documentElement.lang || 'en';
+    
+    setTimeout(()=>{ apply(initial === 'ru' ? 'ru' : 'en'); }, 50);
+
+    
+    window.addEventListener('siteLangChange', (e)=>{
+      const lang = e && e.detail && e.detail.lang ? e.detail.lang : (document.documentElement.lang || 'en');
+      apply(lang === 'ru' ? 'ru' : 'en');
+    });
+  }
+
+  
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initTranslations);
+  } else {
+    initTranslations();
+  }
+})();
+</script>
   
   <section class="what-to-expect-widget">
   <div class="wte-inner">
-    <h2 class="wte-header">What to Expect</h2>
+    <h2 class="wte-header" data-i18n="expect.title">What to Expect</h2>
 
     <div class="wte-grid">
       <div class="wte-card">
         <div class="wte-badge wte-blue">1</div>
         <div class="wte-icon"><i class="fa fa-lightbulb"></i></div>
-        <h3>Discovery & Planning</h3>
-        <p>Let's sit down and map out your goals, challenges, and the best path forward together.</p>
+        <h3 data-i18n="expect.card1.title">Discovery & Planning</h3>
+        <p data-i18n="expect.card1.desc">Let's sit down and map out your goals, challenges, and the best path forward together.</p>
       </div>
 
       <div class="wte-card">
         <div class="wte-badge wte-green">2</div>
         <div class="wte-icon"><i class="fa fa-pencil-ruler"></i></div>
-        <h3>Design & Prototyping</h3>
-        <p>Sketch ideas, build clickable mockups, and fine‑tune every detail until it feels just right.</p>
+        <h3 data-i18n="expect.card2.title">Design & Prototyping</h3>
+        <p data-i18n="expect.card2.desc">Sketch ideas, build clickable mockups, and fine‑tune every detail until it feels just right.</p>
       </div>
 
       <div class="wte-card">
         <div class="wte-badge wte-purple">3</div>
         <div class="wte-icon"><i class="fa fa-code"></i></div>
-        <h3>Development & Implementation</h3>
-        <p>Turns designs into rock‑solid, scalable code — bringing your vision to life with care.</p>
+        <h3 data-i18n="expect.card3.title">Development & Implementation</h3>
+        <p data-i18n="expect.card3.desc">Turns designs into rock‑solid, scalable code — bringing your vision to life with care.</p>
       </div>
 
       <div class="wte-card">
         <div class="wte-badge wte-red">4</div>
         <div class="wte-icon"><i class="fa fa-rocket"></i></div>
-        <h3>Testing & Deployment</h3>
-        <p>We'll put your product through its paces, smooth out bumps, and launch it confidently.</p>
+        <h3 data-i18n="expect.card4.title">Testing & Deployment</h3>
+        <p data-i18n="expect.card4.desc">We'll put your product through its paces, smooth out bumps, and launch it confidently.</p>
       </div>
     </div>
   </div>
@@ -548,6 +959,77 @@
   </style>
 </section>
 
+<script>
+
+(function(){
+  const map = {
+    en: {
+      'expect.title': 'What to Expect',
+      'expect.card1.title': 'Discovery & Planning',
+      'expect.card1.desc': 'Let\'s sit down and map out your goals, challenges, and the best path forward together.',
+      'expect.card2.title': 'Design & Prototyping',
+      'expect.card2.desc': 'Sketch ideas, build clickable mockups, and fine‑tune every detail until it feels just right.',
+      'expect.card3.title': 'Development & Implementation',
+      'expect.card3.desc': 'Turns designs into rock‑solid, scalable code — bringing your vision to life with care.',
+      'expect.card4.title': 'Testing & Deployment',
+      'expect.card4.desc': 'We\'ll put your product through its paces, smooth out bumps, and launch it confidently.'
+    },
+    ru: {
+      'expect.title': 'Чего ожидать',
+      'expect.card1.title': 'Обнаружение и планирование',
+      'expect.card1.desc': 'Давайте обсудим ваши цели, проблемы и лучший путь вперёд вместе.',
+      'expect.card2.title': 'Дизайн и прототипирование',
+      'expect.card2.desc': 'Набросаем идеи, создадим интерактивные макеты и отточим каждую деталь до совершенства.',
+      'expect.card3.title': 'Разработка и внедрение',
+      'expect.card3.desc': 'Преобразуем дизайн в надёжный, масштабируемый код — воплощаем вашу идею в жизнь с заботой.',
+      'expect.card4.title': 'Тестирование и развёртывание',
+      'expect.card4.desc': 'Протестируем ваш продукт, исправим недостатки и запустим его уверенно.'
+    }
+  };
+
+  function apply(lang){
+    if(!lang || !map[lang]) lang = 'en';
+    
+    document.querySelectorAll('[data-i18n^="expect."]').forEach(el=>{
+      const key = el.getAttribute('data-i18n');
+      if(!el.dataset.orig) el.dataset.orig = el.textContent.trim();
+      const txt = (map[lang] && map[lang][key]) ? map[lang][key] : el.dataset.orig;
+      el.textContent = txt;
+    });
+  }
+
+  function initTranslations(){
+    
+    window.__siteTranslationHandlers = window.__siteTranslationHandlers || [];
+    window.__siteTranslationHandlers.push(apply);
+    
+    if(!window.__applySiteTranslations){
+      window.__applySiteTranslations = function(lang){
+        window.__siteTranslationHandlers.forEach(h=>{ try{ h(lang); }catch(e){} });
+      };
+    }
+
+    
+    const saved = (function(){ try{ return localStorage.getItem('siteLang'); }catch(e){return null;} })();
+    const initial = saved || document.documentElement.lang || 'en';
+    
+    setTimeout(()=>{ apply(initial === 'ru' ? 'ru' : 'en'); }, 50);
+
+    
+    window.addEventListener('siteLangChange', (e)=>{
+      const lang = e && e.detail && e.detail.lang ? e.detail.lang : (document.documentElement.lang || 'en');
+      apply(lang === 'ru' ? 'ru' : 'en');
+    });
+  }
+
+  
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initTranslations);
+  } else {
+    initTranslations();
+  }
+})();
+</script>
 
   <section class="how-we-work-widget" aria-labelledby="how-we-work-title">
   <style>
@@ -622,33 +1104,33 @@
 
   <div class="widget-inner">
     <div class="how-head">
-      <div id="how-we-work-title" class="eyebrow">HOW WORK</div>
+      <div id="how-work-title" class="eyebrow" data-i18n="how.title">HOW WORK</div>
 
       <div class="how-legend" aria-hidden="true">
         <div class="how-bar" role="presentation"></div>
-        <div>Calm, consistent output</div>
+        <div data-i18n="how.legend">Calm, consistent output</div>
       </div>
     </div>
 
     <div class="how-grid">
       <div class="how-col">
-        <h4>Engineering first</h4>
-        <p>No account manager layer. You talk directly to the people who design, build and ship your systems.</p>
+        <h4 data-i18n="how.col1.title">Engineering first</h4>
+        <p data-i18n="how.col1.desc">No seller or middleman. You communicate directly with the developer who designs, builds, and launches your projects.</p>
       </div>
 
       <div class="how-col">
-        <h4>Small steps, visible progress</h4>
-        <p>Prefer small, shippable increments with real demos instead of giant invisible phases.</p>
+        <h4 data-i18n="how.col2.title">Small steps, visible progress</h4>
+        <p data-i18n="how.col2.desc">Prefer small, shippable increments with real demos instead of giant invisible phases.</p>
       </div>
 
       <div class="how-col">
-        <h4>Transparent by default</h4>
-        <p>Access to repos, admin dashboards, time tracking and project status without having to ask.</p>
+        <h4 data-i18n="how.col3.title">Transparent by default</h4>
+        <p data-i18n="how.col3.desc">Access to repos, admin dashboards, time tracking and project status without having to ask.</p>
       </div>
 
       <div class="how-col">
-        <h4>Focused delivery</h4>
-        <p>Keep priorities tight and ship predictable, reliable releases so you can plan product growth.</p>
+        <h4 data-i18n="how.col4.title">Focused delivery</h4>
+        <p data-i18n="how.col4.desc">Keep priorities tight and ship predictable, reliable releases so you can plan product growth.</p>
       </div>
     </div>
     <div class="how-footer" role="note"> 
@@ -723,7 +1205,7 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Cheat_Engine_2023_Vector_Logo.svg/960px-Cheat_Engine_2023_Vector_Logo.svg.png"
        alt="Cheat Engine" width="48" height="48">
 </a>
-<div class="how-small">You’ll see the same people across your admin console, Git history and calls, no magic handoff to an invisible anonymous team.</div>
+<div class="how-small" data-i18n="how.footer">You'll see the same people across your admin console, Git history and calls, no magic handoff to an invisible anonymous team.</div>
 </div>
   </div>
   <style>
@@ -733,44 +1215,119 @@
   </style>
 </section>
 
+<script>
+
+(function(){
+  const map = {
+    en: {
+      'how.title': 'HOW WORK',
+      'how.legend': 'Calm, consistent output',
+      'how.col1.title': 'Engineering first',
+      'how.col1.desc': 'No seller or middleman. You communicate directly with the developer who designs, builds, and launches your projects.',
+      'how.col2.title': 'Small steps, visible progress',
+      'how.col2.desc': 'Prefer small, shippable increments with real demos instead of giant invisible phases.',
+      'how.col3.title': 'Transparent by default',
+      'how.col3.desc': 'Access to repos, admin dashboards, time tracking and project status without having to ask.',
+      'how.col4.title': 'Focused delivery',
+      'how.col4.desc': 'Keep priorities tight and ship predictable, reliable releases so you can plan product growth.',
+      'how.footer': 'You\'ll see the same people across your admin console, Git history and calls, no magic handoff to an invisible anonymous team.'
+    },
+    ru: {
+      'how.title': 'КАК РАБОТАЕМ',
+      'how.legend': 'Спокойный, постоянный прогресс',
+      'how.col1.title': 'Инженерия в приоритете',
+      'how.col1.desc': 'Нет продавца или посредника. Вы общаетесь напрямую с разработчиком, который проектирует, разрабатывает и запускает ваши проекты.',
+      'how.col2.title': 'Маленькие шаги, видимый прогресс',
+      'how.col2.desc': 'Предпочитаем небольшие, готовые к отправке этапы работы вместо огромных больших дедлайнов и ожиданий.',
+      'how.col3.title': 'Прозрачность по умолчанию',
+      'how.col3.desc': 'Доступ к репозиториям, панелям администратора, отслеживанию времени и статусу проекта без необходимости спрашивать.',
+      'how.col4.title': 'Сфокусированная доставка',
+      'how.col4.desc': 'Держите приоритеты в узком фокусе и поставляйте предсказуемые, надёжные релизы, чтобы вы могли планировать рост продукта.',
+      'how.footer': 'Вы будете видеть одних и тех же людей в вашей консоли администратора, истории Git и звонков — без магических передач неизвестной команды.'
+    }
+  };
+
+  function apply(lang){
+    if(!lang || !map[lang]) lang = 'en';
+    
+    document.querySelectorAll('[data-i18n^="how."]').forEach(el=>{
+      const key = el.getAttribute('data-i18n');
+      if(!el.dataset.orig) el.dataset.orig = el.textContent.trim();
+      const txt = (map[lang] && map[lang][key]) ? map[lang][key] : el.dataset.orig;
+      el.textContent = txt;
+    });
+  }
+
+  function initTranslations(){
+    
+    window.__siteTranslationHandlers = window.__siteTranslationHandlers || [];
+    window.__siteTranslationHandlers.push(apply);
+    
+    if(!window.__applySiteTranslations){
+      window.__applySiteTranslations = function(lang){
+        window.__siteTranslationHandlers.forEach(h=>{ try{ h(lang); }catch(e){} });
+      };
+    }
+
+    
+    const saved = (function(){ try{ return localStorage.getItem('siteLang'); }catch(e){return null;} })();
+    const initial = saved || document.documentElement.lang || 'en';
+    
+    setTimeout(()=>{ apply(initial === 'ru' ? 'ru' : 'en'); }, 50);
+
+    
+    window.addEventListener('siteLangChange', (e)=>{
+      const lang = e && e.detail && e.detail.lang ? e.detail.lang : (document.documentElement.lang || 'en');
+      apply(lang === 'ru' ? 'ru' : 'en');
+    });
+  }
+
+  
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initTranslations);
+  } else {
+    initTranslations();
+  }
+})();
+</script>
 
   
 <section class="services-widget" aria-labelledby="services-title">
 	<div class="widget-inner">
 		<div class="services-head">
-			<h2 id="services-title" class="services-title">Tailored Digital Solutions for Your Business</h2>
-			<p class="services-sub">From automation and AI to mobile apps and enterprise software, we design solutions built for impact and scale.</p>
+			<h2 id="services-title" class="services-title" data-i18n="services.title">Tailored Digital Solutions for Your Business</h2>
+			<p class="services-sub" data-i18n="services.sub">From automation and AI to mobile apps and enterprise software, design solutions built for impact and scale.</p>
 		</div>
 
 		<div class="services-grid" role="list">
 			<div class="service-card" role="listitem">
 				<div class="service-visual" aria-hidden="true"><i class="fa fa-code" aria-hidden="true"></i></div>
-				<h3>Software Development</h3>
-				<p>Build robust, tailored solutions that evolve with your business and keep you ahead of the curve.</p>
+				<h3 data-i18n="services.card1.title">Software Development</h3>
+				<p data-i18n="services.card1.desc">Build robust, tailored solutions that evolve with your business and keep you ahead of the curve.</p>
 			</div>
 
 			<div class="service-card" role="listitem">
 				<div class="service-visual" aria-hidden="true"><i class="fa fa-mobile" aria-hidden="true"></i></div>
-				<h3>App Development</h3>
-				<p>Turn ideas into brilliant mobile experiences — intuitive, rock‑solid, and designed to keep users hooked.</p>
+				<h3 data-i18n="services.card2.title">App Development</h3>
+				<p data-i18n="services.card2.desc">Turn ideas into brilliant mobile experiences — intuitive, rock‑solid, and designed to keep users hooked.</p>
 			</div>
 
 			<div class="service-card" role="listitem">
 				<div class="service-visual" aria-hidden="true"><i class="fa fa-laptop" aria-hidden="true"></i></div>
-				<h3>Web Development</h3>
-				<p>Build fast, scalable, and visually stunning websites — tailored to your goals and loved by your users.</p>
+				<h3 data-i18n="services.card3.title">Web Development</h3>
+				<p data-i18n="services.card3.desc">Build fast, scalable, and visually stunning websites — tailored to your goals and loved by your users.</p>
 			</div>
 
 			<div class="service-card" role="listitem">
 				<div class="service-visual" aria-hidden="true"><i class="fa fa-pencil-ruler" aria-hidden="true"></i></div>
-				<h3>UI/UX Design</h3>
-				<p>From wireframes to polished prototypes, we create delightful experiences that drive engagement.</p>
+				<h3 data-i18n="services.card4.title">UI/UX Design</h3>
+				<p data-i18n="services.card4.desc">From wireframes to polished prototypes, create delightful experiences that drive engagement.</p>
 			</div>
 
 			<div class="service-card" role="listitem">
 				<div class="service-visual" aria-hidden="true"><i class="fa fa-robot" aria-hidden="true"></i></div>
-				<h3>Automation &amp; AI Solutions</h3>
-				<p>Streamline your workflows and integrate intelligent systems that unlock serious efficiency.</p>
+				<h3 data-i18n="services.card5.title">Automation &amp; AI Solutions</h3>
+				<p data-i18n="services.card5.desc">Streamline your workflows and integrate intelligent systems that unlock serious efficiency.</p>
 			</div>
 		</div>
 	</div>
@@ -784,10 +1341,15 @@
 	.services-title{font-size:1.8rem;margin:0 0 0.4rem 0}
 	.services-sub{color:#bfcfe0;margin:0 0 1rem}
 
-	.services-grid{display:flex;flex-direction:row;gap:1rem;overflow-x:auto;overflow-y:hidden;padding:0 1.25rem 0.8rem 1.25rem;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;width:100%;box-sizing:border-box}
+	.services-grid{display:block; gap:1rem;overflow:hidden;padding:0 1.25rem 0.8rem 1.25rem;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;width:100%;box-sizing:border-box}
+
+	 
+	.services-strip{display:flex;gap:1rem;align-items:stretch;will-change:transform;transform:translate3d(0,0,0)}
+	 
+	.services-grid.auto-scrolling{scroll-snap-type:none;scroll-behavior:auto}
 	.services-grid::-webkit-scrollbar{display:none}
 	.services-grid:active{cursor:grabbing}
-	.service-card{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border-radius:10px;padding:1.4rem;border:1px solid rgba(255,255,255,0.03);color:#dbe9ff;min-height:220px;display:flex;flex-direction:column;gap:0.8rem;position:relative;box-shadow:0 8px 40px rgba(83,1,72,0.06);flex:0 0 calc(25% - 0.75rem);min-width:300px;scroll-snap-align:start}
+	.service-card{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border-radius:10px;padding:1.4rem;border:1px solid rgba(255,255,255,0.03);color:#dbe9ff;min-height:220px;display:flex;flex-direction:column;gap:0.8rem;position:relative;box-shadow:0 8px 40px rgba(83,1,72,0.06);flex:0 0 calc(25% - 0.75rem);min-width:300px}
 	.service-card:before{content:"";position:absolute;inset:-6px;border-radius:12px;padding:6px;background:linear-gradient(90deg, rgba(0,0,0,0.139), rgba(83,1,72,0.16));-webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);pointer-events:none}
 
 	.service-visual{height:100px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:transparent}
@@ -835,6 +1397,181 @@
 		.service-card h3{font-size:0.85rem}
 	}
 	</style>
+
+	<script>
+	
+	
+	(function(){
+		function ready(fn){ if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn); else fn(); }
+
+		ready(()=>{
+			const container = document.querySelector('.services-grid');
+			if(!container) return;
+
+			
+			const origChildren = Array.from(container.children);
+			if(origChildren.length === 0) return;
+
+			const strip = document.createElement('div');
+			strip.className = 'services-strip';
+			
+			origChildren.forEach(n => strip.appendChild(n));
+			
+			origChildren.forEach(n => strip.appendChild(n.cloneNode(true)));
+			
+			container.innerHTML = '';
+			container.appendChild(strip);
+
+			
+
+			let origWidth = strip.scrollWidth / 2; 
+			let x = 0; 
+			let speed = 40; 
+			let rafId = null;
+			let lastTs = null;
+
+			
+			let isDown = false;
+			let startX = 0;
+			let manualOffset = 0;
+			let manualStart = 0;
+
+			strip.style.willChange = 'transform';
+
+			function render(){
+				
+				let display = x + manualOffset;
+				
+				if(origWidth > 0){
+					display = display % origWidth;
+					if(display < 0) display += origWidth;
+				}
+				strip.style.transform = `translate3d(${-display}px,0,0)`;
+			}
+
+			function step(ts){
+				if(!lastTs) lastTs = ts;
+				const dt = (ts - lastTs) / 1000; lastTs = ts;
+				
+				x += speed * dt;
+				
+				if(origWidth > 0 && x >= origWidth) x -= origWidth * Math.floor(x / origWidth);
+				render();
+				rafId = requestAnimationFrame(step);
+			}
+
+			function start(){ if(!rafId){ lastTs = null; rafId = requestAnimationFrame(step); } }
+			function stop(){ if(rafId){ cancelAnimationFrame(rafId); rafId = null; } }
+
+			
+			strip.addEventListener('pointerdown', (e)=>{
+				isDown = true;
+				startX = e.clientX;
+				manualStart = manualOffset;
+				strip.setPointerCapture && strip.setPointerCapture(e.pointerId);
+			}, {passive:true});
+
+			strip.addEventListener('pointermove', (e)=>{
+				if(!isDown) return;
+				const dx = e.clientX - startX;
+				
+				manualOffset = manualStart - dx;
+				render();
+			}, {passive:true});
+
+			strip.addEventListener('pointerup', (e)=>{
+				isDown = false;
+				try{ strip.releasePointerCapture && strip.releasePointerCapture(e.pointerId); }catch(_){ }
+				
+				x += manualOffset;
+				manualOffset = 0;
+			}, {passive:true});
+
+			
+			strip.addEventListener('pointercancel', ()=>{ isDown = false; manualOffset = 0; });
+
+			
+			let resizeTimer = null;
+			window.addEventListener('resize', ()=>{
+				clearTimeout(resizeTimer);
+				resizeTimer = setTimeout(()=>{
+					origWidth = strip.scrollWidth / 2;
+					render();
+				}, 120);
+			});
+
+			
+			start();
+		});
+	})();
+	</script>
+	<script>
+	
+	(function(){
+		const map = {
+			"en": {
+				"services.title": "Tailored Digital Solutions for Your Business",
+				"services.sub": "From automation and AI to mobile apps and enterprise software, design solutions built for impact and scale.",
+				"services.card1.title": "Software Development",
+				"services.card1.desc": "Build robust, tailored solutions that evolve with your business and keep you ahead of the curve.",
+				"services.card2.title": "App Development",
+				"services.card2.desc": "Turn ideas into brilliant mobile experiences — intuitive, rock‑solid, and designed to keep users hooked.",
+				"services.card3.title": "Web Development",
+				"services.card3.desc": "Build fast, scalable, and visually stunning websites — tailored to your goals and loved by your users.",
+				"services.card4.title": "UI/UX Design",
+				"services.card4.desc": "From wireframes to polished prototypes, create delightful experiences that drive engagement.",
+				"services.card5.title": "Automation & AI Solutions",
+				"services.card5.desc": "Streamline your workflows and integrate intelligent systems that unlock serious efficiency."
+			},
+			"ru": {
+				"services.title": "Индивидуальные цифровые решения для вашего бизнеса",
+				"services.sub": "От автоматизации и ИИ до мобильных приложений и корпоративного ПО — проектируем решения, ориентированные на результат и масштабирование.",
+				"services.card1.title": "Разработка программного обеспечения",
+				"services.card1.desc": "Создаём надёжные, индивидуальные решения, которые развиваются вместе с вашим бизнесом и помогают сохранять лидерство.",
+				"services.card2.title": "Разработка мобильных приложений",
+				"services.card2.desc": "Реализуем идеи в отличные мобильные приложения — интуитивные, надёжные и удерживающие пользователей.",
+				"services.card3.title": "Веб‑разработка",
+				"services.card3.desc": "Создаём быстрые, масштабируемые и визуально привлекательные сайты — под ваши цели и пользователей.",
+				"services.card4.title": "Дизайн UI/UX",
+				"services.card4.desc": "От вайрфреймов до полированных прототипов — создаём опыт, повышающий вовлечённость.",
+				"services.card5.title": "Автоматизация и решения на базе ИИ",
+				"services.card5.desc": "Оптимизируем процессы и внедряем интеллектуальные системы для реальной эффективности."
+			}
+		};
+
+		function apply(lang){
+			if(!lang || !map[lang]) lang = 'en';
+			
+			document.querySelectorAll('[data-i18n^="services."]').forEach(el=>{
+				const key = el.getAttribute('data-i18n');
+				if(!el.dataset.orig) el.dataset.orig = el.textContent.trim();
+				const txt = (map[lang] && map[lang][key]) ? map[lang][key] : el.dataset.orig;
+				el.textContent = txt;
+			});
+		}
+
+		
+		const saved = (function(){ try{ return localStorage.getItem('siteLang'); }catch(e){return null;} })();
+		const initial = saved || document.documentElement.lang || 'en';
+		apply(initial === 'ru' ? 'ru' : 'en');
+
+		
+		window.__siteTranslationHandlers = window.__siteTranslationHandlers || [];
+		window.__siteTranslationHandlers.push(apply);
+		
+		if(!window.__applySiteTranslations){
+			window.__applySiteTranslations = function(lang){
+				window.__siteTranslationHandlers.forEach(h=>{ try{ h(lang); }catch(e){} });
+			};
+		}
+
+		
+		window.addEventListener('siteLangChange', (e)=>{
+			const lang = e && e.detail && e.detail.lang ? e.detail.lang : (document.documentElement.lang || 'en');
+			apply(lang === 'ru' ? 'ru' : 'en');
+		});
+	})();
+	</script>
 </section>
 
 
@@ -855,69 +1592,141 @@
 </div>
 
 <section id="contact">
-  <h2>To build your system</h2>
+  <div class="contact-grid">
+    <div class="contact-left">
+      <div class="kicker" data-i18n="contact.kicker">FREE PROJECT CONSULTATION</div>
+      <h2 data-i18n="contact.title">Get in touch</h2>
+      <p class="lead" data-i18n="contact.lead">Enter your message</p>
 
-  <form class="project-form">
-    <label>Name*</label>
-    <input type="text" name="name" placeholder="Your name" required>
+      <div class="chips">
+        <span class="chip" data-i18n="contact.chip1">SaaS application</span>
+        <span class="chip" data-i18n="contact.chip2">Backend / API development</span>
+        <span class="chip" data-i18n="contact.chip3">Website</span>
+      </div>
 
-    <label>Email*</label>
-    <input type="email" name="email" placeholder="you@example.com" required>
-
-    <label>Company</label>
-    <input type="text" name="company" placeholder="Your company (optional)">
-
-    <label>Your Contact</label>
-    <input type="text" name="contact" placeholder="@telegram / Discord">
-
-    <label>Message</label>
-    <textarea name="message" placeholder="Describe your project"></textarea>
-
-    <label>Select Project Type</label>
-    <div class="project-types">
-      <input type="checkbox" id="uxui" name="project-type" value="UX/UI Design">
-      <label for="uxui">
-        <i class="icon fa fa-globe"></i>
-        UX/UI Design
-      </label>
-
-      <input type="checkbox" id="web" name="project-type" value="Web app">
-      <label for="web">
-        <i class="icon fa fa-code"></i>
-        Web App
-      </label>
-
-      <input type="checkbox" id="mobile" name="project-type" value="Mobile App">
-      <label for="mobile">
-        <i class="icon fa fa-mobile"></i>
-        Mobile App
-      </label>
-
-      <input type="checkbox" id="desktop" name="project-type" value="Desktop App">
-      <label for="desktop">
-        <i class="icon fa fa-desktop"></i>
-        Desktop App
-      </label>
-
-      <input type="checkbox" id="api" name="project-type" value="API Dev">
-      <label for="api">
-        <i class="icon fa fa-cogs"></i>
-        API Dev
-      </label>
-
-      <input type="checkbox" id="scriptbot" name="project-type" value="Script/Bot">
-      <label for="scriptbot">
-        <i class="icon fa fa-robot"></i>
-        Script / Bot
-      </label>
+      <div class="preview-box">
+        <strong>Thank you for your inquiry!</strong>
+        <div style="margin-top:8px;color:#9fb0c8">From: Enter your name<br>Project: Select a project type<br>Type: Select a project type<br>Budget & timeline: — Select a timeline</div>
+      </div>
     </div>
 
-    <button type="submit" class="send-btn">SEND</button>
-  </form>
+    <div class="contact-right">
+      <form class="project-form">
+        
+        <input type="hidden" name="estimated_budget" value="">
+        <input type="hidden" name="preferred_timeline" value="">
+        <div class="row">
+          <div class="field">
+            <label for="name" data-i18n="contact.label.name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="field">
+            <label for="email" data-i18n="contact.label.email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="company" data-i18n="contact.label.company">Company (optional)</label>
+            <input id="company" type="text" name="company" placeholder="Company name">
+          </div>
+          <div class="field">
+            <label for="contact" data-i18n="contact.label.contact">Your contact (Telegram/Discord)</label>
+            <input id="contact" class="standard-input" type="text" name="contact" placeholder="@telegram / Discord" />
+          </div>
+        </div>
+
+  <label class="types-label" data-i18n="contact.label.types">Select project type</label>
+        <div class="types-grid">
+          <input type="checkbox" id="t-website" name="project-type" value="Website" style="display:none">
+          <label for="t-website" class="type-tile">
+            <i class="fa fa-globe"></i>
+            <span class="label" data-i18n="contact.type.website">Website</span>
+          </label>
+
+          <input type="checkbox" id="t-ecom" name="project-type" value="E-commerce" style="display:none">
+          <label for="t-ecom" class="type-tile">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="label" data-i18n="contact.type.ecom">E-commerce platform</span>
+          </label>
+
+          <input type="checkbox" id="t-saas" name="project-type" value="SaaS" style="display:none">
+          <label for="t-saas" class="type-tile">
+            <i class="fa fa-code"></i>
+            <span class="label" data-i18n="contact.type.saas">SaaS application</span>
+          </label>
+
+          <input type="checkbox" id="t-mobile" name="project-type" value="Mobile App" style="display:none">
+          <label for="t-mobile" class="type-tile">
+            <i class="fa fa-mobile"></i>
+            <span class="label" data-i18n="contact.type.mobile">Mobile app</span>
+          </label>
+
+          <input type="checkbox" id="t-desktop" name="project-type" value="Desktop App" style="display:none">
+          <label for="t-desktop" class="type-tile">
+            <i class="fa fa-desktop"></i>
+            <span class="label" data-i18n="contact.type.desktop">Desktop application</span>
+          </label>
+
+          <input type="checkbox" id="t-backend" name="project-type" value="Backend / API" style="display:none">
+          <label for="t-backend" class="type-tile">
+            <i class="fa fa-server"></i>
+            <span class="label" data-i18n="contact.type.backend">Backend / API development</span>
+          </label>
+
+          <input type="checkbox" id="t-ai" name="project-type" value="AI / Automation" style="display:none">
+          <label for="t-ai" class="type-tile">
+            <i class="fa fa-robot"></i>
+            <span class="label" data-i18n="contact.type.ai">AI / Automation</span>
+          </label>
+
+          <input type="checkbox" id="t-uiux" name="project-type" value="UI/UX design" style="display:none">
+          <label for="t-uiux" class="type-tile">
+            <i class="fa fa-code"></i>
+            <span class="label" data-i18n="contact.type.uiux">UI/UX design</span>
+          </label>
+
+          <input type="checkbox" id="t-consult" name="project-type" value="Technical consulting" style="display:none">
+          <label for="t-consult" class="type-tile">
+            <i class="fa fa-gear"></i>
+            <span class="label" data-i18n="contact.type.consult">Technical consulting</span>
+          </label>
+        </div>
+
+        <label data-i18n="contact.label.budget">Estimated budget</label>
+        <div class="chips-grid" data-group="budget">
+          <button type="button" class="chip-select" data-i18n="contact.budget.500">Under $500</button>
+          <button type="button" class="chip-select" data-i18n="contact.budget.1k">$500–$1,000</button>
+          <button type="button" class="chip-select" data-i18n="contact.budget.3k">$1,000–$3,000</button>
+          <button type="button" class="chip-select" data-i18n="contact.budget.7k">$3,000–$7,000</button>
+          <button type="button" class="chip-select" data-i18n="contact.budget.15k">$7,000–$15,000</button>
+          <button type="button" class="chip-select" data-i18n="contact.budget.30k">Over $30,000</button>
+        </div>
+
+        <label data-i18n="contact.label.timeline">Preferred timeline</label>
+        <div class="chips-grid" data-group="timeline">
+          <button type="button" class="chip-select" data-i18n="contact.timeline.immediate">Start immediately</button>
+          <button type="button" class="chip-select" data-i18n="contact.timeline.week">Within 1 week</button>
+          <button type="button" class="chip-select" data-i18n="contact.timeline.2weeks">1–2 weeks</button>
+          <button type="button" class="chip-select" data-i18n="contact.timeline.month">Within 1 month</button>
+          <button type="button" class="chip-select" data-i18n="contact.timeline.flexible">Flexible / Just exploring</button>
+        </div>
+
+        <label data-i18n="contact.label.message">Message</label>
+        <textarea name="message" placeholder="Enter your message"></textarea>
+
+        <div class="request-row">
+          <button type="submit" class="send-btn" data-i18n="contact.button.submit">Request a quote</button>
+          <div style="color:#97a3b8;font-size:0.9rem" data-i18n="contact.thanks">Thank you for your message!</div>
+        </div>
+      </form>
+    </div>
+  </div>
 </section>
 
 <footer style="margin-top: 3rem; padding: 2rem 0; text-align: center; font-size: 0.9rem; color: #888; border-top: 1px solid #222;">
-  <p style="margin: 0.2rem 0;">Everything written here was tested by time and fire. © 2025 Сopyright  ynki</p>
+  <p style="margin: 0.2rem 0;">Everything written here was tested by time. ©2018 copyright</p>
   <p style="margin: 0.2rem 0;">
     <a href="https://github.com/ynki0" style="color: #f92672; text-decoration: none;">GitHub</a> ·
     <a href="https://t.me/ynki01" style="color: #f92672; text-decoration: none;">Telegram</a> ·
@@ -931,6 +1740,122 @@
 
 
 <script>
+
+(function(){
+  const map = {
+    en: {
+      'contact.kicker': 'FREE PROJECT CONSULTATION',
+      'contact.title': 'Get in touch',
+      'contact.lead': 'Enter your message',
+      'contact.chip1': 'SaaS application',
+      'contact.chip2': 'Backend / API development',
+      'contact.chip3': 'Website',
+      'contact.label.name': 'Name',
+      'contact.label.email': 'Email',
+      'contact.label.company': 'Company (optional)',
+      'contact.label.contact': 'Your contact (Telegram/Discord)',
+      'contact.label.types': 'Select project type',
+      'contact.type.website': 'Website',
+      'contact.type.ecom': 'E-commerce platform',
+      'contact.type.saas': 'SaaS application',
+      'contact.type.mobile': 'Mobile app',
+      'contact.type.desktop': 'Desktop application',
+      'contact.type.backend': 'Backend / API development',
+      'contact.type.ai': 'AI / Automation',
+      'contact.type.uiux': 'UI/UX design',
+      'contact.type.consult': 'Technical consulting',
+      'contact.label.budget': 'Estimated budget',
+      'contact.budget.500': 'Under $500',
+      'contact.budget.1k': '$500–$1,000',
+      'contact.budget.3k': '$1,000–$3,000',
+      'contact.budget.7k': '$3,000–$7,000',
+      'contact.budget.15k': '$7,000–$15,000',
+      'contact.budget.30k': 'Over $30,000',
+      'contact.label.timeline': 'Preferred timeline',
+      'contact.timeline.immediate': 'Start immediately',
+      'contact.timeline.week': 'Within 1 week',
+      'contact.timeline.2weeks': '1–2 weeks',
+      'contact.timeline.month': 'Within 1 month',
+      'contact.timeline.flexible': 'Flexible / Just exploring',
+      'contact.label.message': 'Message',
+      'contact.button.submit': 'Request a quote',
+      'contact.thanks': 'Thank you for your message!'
+    },
+    ru: {
+      'contact.kicker': 'БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ',
+      'contact.title': 'Свяжитесь с нами',
+      'contact.lead': 'Введите ваше сообщение',
+      'contact.chip1': 'SaaS приложение',
+      'contact.chip2': 'Разработка бэкенда / API',
+      'contact.chip3': 'Сайт',
+      'contact.label.name': 'Имя',
+      'contact.label.email': 'Email',
+      'contact.label.company': 'Компания (опционально)',
+      'contact.label.contact': 'Ваш контакт (Telegram/Discord)',
+      'contact.label.types': 'Выберите тип проекта',
+      'contact.type.website': 'Сайт',
+      'contact.type.ecom': 'E-commerce платформа',
+      'contact.type.saas': 'SaaS приложение',
+      'contact.type.mobile': 'Мобильное приложение',
+      'contact.type.desktop': 'Десктопное приложение',
+      'contact.type.backend': 'Разработка бэкенда / API',
+      'contact.type.ai': 'AI / Автоматизация',
+      'contact.type.uiux': 'UI/UX дизайн',
+      'contact.type.consult': 'Техническая консультация',
+      'contact.label.budget': 'Примерный бюджет',
+      'contact.budget.500': 'До $500',
+      'contact.budget.1k': '$500–$1,000',
+      'contact.budget.3k': '$1,000–$3,000',
+      'contact.budget.7k': '$3,000–$7,000',
+      'contact.budget.15k': '$7,000–$15,000',
+      'contact.budget.30k': 'Свыше $30,000',
+      'contact.label.timeline': 'Предпочтительные сроки',
+      'contact.timeline.immediate': 'Начать сразу',
+      'contact.timeline.week': 'В течение недели',
+      'contact.timeline.2weeks': '1–2 недели',
+      'contact.timeline.month': 'В течение месяца',
+      'contact.timeline.flexible': 'Гибко / Просто изучаю',
+      'contact.label.message': 'Сообщение',
+      'contact.button.submit': 'Запросить расценки',
+      'contact.thanks': 'Спасибо за ваше сообщение!'
+    }
+  };
+
+  function apply(lang){
+    if(!lang || !map[lang]) lang = 'en';
+    
+    document.querySelectorAll('[data-i18n^="contact."]').forEach(el=>{
+      const key = el.getAttribute('data-i18n');
+      if(!el.dataset.orig) el.dataset.orig = el.textContent.trim();
+      const txt = (map[lang] && map[lang][key]) ? map[lang][key] : el.dataset.orig;
+      el.textContent = txt;
+    });
+  }
+
+  
+  window.__siteTranslationHandlers = window.__siteTranslationHandlers || [];
+  window.__siteTranslationHandlers.push(apply);
+  
+  if(!window.__applySiteTranslations){
+    window.__applySiteTranslations = function(lang){
+      window.__siteTranslationHandlers.forEach(h=>{ try{ h(lang); }catch(e){} });
+    };
+  }
+
+  
+  const saved = (function(){ try{ return localStorage.getItem('siteLang'); }catch(e){return null;} })();
+  const initial = saved || document.documentElement.lang || 'en';
+  apply(initial === 'ru' ? 'ru' : 'en');
+
+  
+  window.addEventListener('siteLangChange', (e)=>{
+    const lang = e && e.detail && e.detail.lang ? e.detail.lang : (document.documentElement.lang || 'en');
+    apply(lang === 'ru' ? 'ru' : 'en');
+  });
+})();
+</script>
+
+<script>
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".project-form");
   const sendBtn = form.querySelector(".send-btn");
@@ -941,24 +1866,35 @@ document.addEventListener("DOMContentLoaded", () => {
     sendBtn.disabled = true;
     sendBtn.textContent = "Sending...";
 
+    
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+    const entries = Object.fromEntries(formData.entries());
 
     const checkedTypes = [...form.querySelectorAll("input[name='project-type']:checked")]
       .map(input => input.value);
 
-    data.projectTypes = checkedTypes;
+    const estimatedBudget = (form.querySelector('input[name="estimated_budget"]') || { value: '' }).value;
+    const preferredTimeline = (form.querySelector('input[name="preferred_timeline"]') || { value: '' }).value;
 
-    if (data.projectTypes && data.projectTypes.length > 0) {
-      const formattedTypes = data.projectTypes.map(type => `- ${type}`).join("\n");
-      if (data.message && data.message.trim().length > 0) {
-        data.message += `\n\nSelected Types:\n${formattedTypes}`;
-      } else {
-        data.message = `—\n\nSelected Types:\n${formattedTypes}`;
-      }
-    } else if (!data.message || data.message.trim() === "") {
-      data.message = "—";
-    }
+    const payload = {
+      name: entries.name || '',
+      email: entries.email || '',
+      company: entries.company || '',
+      contact: entries.contact || '',
+      projectTypes: checkedTypes,
+      estimated_budget: estimatedBudget || '',
+      preferred_timeline: preferredTimeline || '',
+      message: entries.message || ''
+    };
+
+    
+    const typesText = (payload.projectTypes && payload.projectTypes.length) ? payload.projectTypes.join(', ') : '—';
+    const text = `New project inquiry:\n\nName: ${payload.name || '—'}\nEmail: ${payload.email || '—'}\nCompany: ${payload.company || '—'}\nContact: ${payload.contact || '—'}\nProject type(s): ${typesText}\nEstimated budget: ${payload.estimated_budget || '—'}\nPreferred timeline: ${payload.preferred_timeline || '—'}\n\nMessage:\n${payload.message || '—'}`;
+
+  
+  
+  const data = { ...payload };
+  data.message = text; 
 
     try {
       await fetch("https://round-snowflake-e0ee.teslo-7026.workers.dev/", {
@@ -974,6 +1910,100 @@ document.addEventListener("DOMContentLoaded", () => {
       sendBtn.textContent = "SEND";
     }
   });
+
+  
+  function updatePreview() {
+    const preview = document.querySelector('.preview-box');
+    if (!preview) return;
+
+    const name = (form.querySelector('input[name="name"]') || { value: '' }).value || '—';
+  const contactVal = (form.querySelector('input[name="contact"]') || { value: '' }).value || '';
+  const checkedTiles = [...form.querySelectorAll("input[name='project-type']:checked")].map(i => i.value);
+
+  const projectVal = (checkedTiles.length ? checkedTiles[0] : '—');
+  const typeVal = (checkedTiles.length ? checkedTiles.join(', ') : '—');
+
+    const budgetBtn = document.querySelector('.chips-grid[data-group="budget"] .chip-select.active');
+    const timelineBtn = document.querySelector('.chips-grid[data-group="timeline"] .chip-select.active');
+    const budgetText = budgetBtn ? budgetBtn.textContent.trim() : '—';
+    const timelineText = timelineBtn ? timelineBtn.textContent.trim() : '—';
+
+    
+    const keys = [];
+    if (name && name !== '—') keys.push('name');
+    if (contactVal) keys.push('contact');
+    if (projectVal && projectVal !== '—') keys.push('project');
+    if (typeVal && typeVal !== '—') keys.push('type');
+    if ((budgetText && budgetText !== '—') || (timelineText && timelineText !== '—')) keys.push('budgetTimeline');
+    const filledCount = keys.length;
+    const totalKeys = 5;
+
+    preview.innerHTML = `
+      <div class="preview-badge">${filledCount}/${totalKeys} key details</div>
+      <strong>Thank you for your inquiry!</strong>
+      <div style="margin-top:8px;color:#9fb0c8">
+        <div><strong>From:</strong> ${name}${contactVal ? ' ('+contactVal+')' : ''}</div>
+        <div><strong>Project:</strong> ${projectVal}</div>
+        <div><strong>Type:</strong> ${typeVal}</div>
+        <div><strong>Budget & timeline:</strong> ${budgetText} · ${timelineText}</div>
+      </div>
+    `;
+    
+    const hiddenBudget = form.querySelector('input[name="estimated_budget"]');
+    const hiddenTimeline = form.querySelector('input[name="preferred_timeline"]');
+    if (hiddenBudget) hiddenBudget.value = budgetText === '—' ? '' : budgetText;
+    if (hiddenTimeline) hiddenTimeline.value = timelineText === '—' ? '' : timelineText;
+  }
+
+  
+  document.querySelectorAll('.chip-select').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const group = btn.closest('.chips-grid');
+      if (group && group.dataset && group.dataset.group) {
+        
+        group.querySelectorAll('.chip-select').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      } else {
+        btn.classList.toggle('active');
+      }
+      updatePreview();
+    });
+  });
+
+  
+  document.querySelectorAll('label.type-tile').forEach(lbl => {
+    lbl.setAttribute('tabindex', '0');
+    lbl.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const id = lbl.getAttribute('for');
+        const cb = id ? document.getElementById(id) : null;
+        if (cb) { cb.checked = !cb.checked; cb.dispatchEvent(new Event('change')); }
+      }
+    });
+  });
+
+  
+  form.querySelectorAll('input[name="name"]').forEach(i => i.addEventListener('input', updatePreview));
+  
+  form.querySelectorAll('input[name="contact"]').forEach(i => i.addEventListener('input', updatePreview));
+  
+  function onTypeCheckboxChange(e) {
+    const cb = e.target;
+    const lbl = document.querySelector('label[for="' + cb.id + '"]');
+    if (lbl) lbl.classList.toggle('selected', cb.checked);
+    updatePreview();
+  }
+
+  document.querySelectorAll("input[name='project-type']").forEach(cb => {
+    cb.addEventListener('change', onTypeCheckboxChange);
+    
+    const lbl = document.querySelector('label[for="' + cb.id + '"]');
+    if (lbl) lbl.classList.toggle('selected', cb.checked);
+  });
+
+  
+  updatePreview();
 
   
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
