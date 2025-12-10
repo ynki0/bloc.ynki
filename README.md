@@ -1,2 +1,2 @@
 ###
-Web made using hugo
+Web 
