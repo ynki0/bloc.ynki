@@ -1,6 +1,11 @@
+# Allow all crawlers
 User-agent: *
 Allow: /
 
-Host: https://ynki.website/
+# Sitemap location
 Sitemap: https://ynki.website/sitemap.xml
-Sitemap: https://ynki.website/yandex-feed.xml
+
+# Block specific paths (if any)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /404
